@@ -11,4 +11,3 @@ RUN ROOT=/skopeo emerge app-emulation/skopeo
 # ------------------- empty image
 FROM scratch
 COPY --from=builder /skopeo /
-ENTRYPOINT ["/usr/bin/skopeo"]
