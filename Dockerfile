@@ -12,3 +12,4 @@ RUN ROOT=/skopeo emerge app-emulation/skopeo
 FROM scratch
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 COPY --from=builder /skopeo /
+COPY --from=builder /bin/sh /
